@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cp-header">
+        <div class="container d-flex align-items-stretch justify-content-between">
+            <a href="/" class="cp-header__logo">
+                <img src="img/logo.svg" alt="Logo de Caminos de Pacientes">
+            </a>
+
+            <div class="d-flex align-items-center justify-content-between">
+                <nav class="cp-header__nav d-none d-lg-flex">
+                    <a href="#" class="cp-header__nav-item active">Sobre el proyecto</a>
+                    <a href="#" class="cp-header__nav-item">Ayuda</a>
+                    <a href="#" class="cp-header__nav-item">Preguntas frecuentes</a>
+                    <a href="#" class="cp-header__nav-item">Contacto</a>
+                </nav>
+                <button class="cp-btn-menu-toggle js-btn-menu-toggle d-lg-none">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 3h14M1 12h22M9 21h14" stroke="#EF6B6B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="cp-menu-dropdown (active) | d-none d-lg-flex">
+                    <button class="cp-menu-dropdown__btn ms-3 d-none d-lg-flex">
+                        <span class="cp-menu-dropdown__initial">A</span>
+                        <span class="cp-menu-dropdown__btn-caret"></span>
+                    </button>
+                    <div class="cp-menu-dropdown__list">
+                        <a href="#" class="cp-menu-dropdown__list-item">Mi perfil</a>
+                        <a href="#" class="cp-menu-dropdown__list-item">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile menu -->
+    <div class="cp-mobile-menu">
+        <header class="cp-mobile-menu__header">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a href="/" class="cp-header__logo">
+                    <img src="img/logo-white.svg" alt="Logo de Caminos de Pacientes">
+                </a>
+                <button class="cp-btn-menu-toggle js-btn-menu-toggle">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.7353 1L1 19.7353" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M19.7353 19.7353L1 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <nav class="cp-mobile-menu__nav">
+            <a href="#" class="cp-mobile-menu__item active">
+                Inicio
+            </a>
+            <a href="#" class="cp-mobile-menu__item">
+                Sobre el proyecto
+            </a>
+            <a href="#" class="cp-mobile-menu__item">
+                Ayuda
+            </a>
+            <a href="#" class="cp-mobile-menu__item">
+                Preguntas frecuentes
+            </a>
+            <a href="#" class="cp-mobile-menu__item">
+                Contacto
+            </a>
+            <hr>
+            <a href="#" class="cp-mobile-menu__item">
+                Mi perfil
+            </a>
+            <a href="#" class="cp-mobile-menu__item">
+                Cerrar sesión
+            </a>
+        </nav>
+    </div>
+    <!-- /mobile menu -->
+
+</body>
