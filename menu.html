@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,31 @@
     <title>Menu</title>
     <link rel="stylesheet" href="css/test.css">
     <script src="js/navbar.js"></script>
-    
+
 </head>
+
 <body>
     <!-- Navigation bar -->
     <header class="header">
-        <a href="#" class="logo">Apelatron</a>
-        <!-- Search Bar? -->
-        <label class="search"></label>
-        <!-- Hamburger icon -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu" onclick="triggerIfMenu()"><img src="img/Hamburger-menu.png"><span class="hamb-line"></span></label>
-        <!-- Menu-Dropdown -->
-        <nav class="nav">
-            <ul class="menu">
-                <div><a href="inicio.html">Inicio</a></div>
-                <div><a href="#">Asistente de apelación</a></div>
-                <a href="about.html">Sobre el proyecto</a>
-            </ul>
-        </nav>
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <!-- Title -->
+        <h2 class="menuTitle">Apelatron</h2>
+        <div class="menu-container">
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu" onclick="triggerIfMenu()"><img src="img/Hamburger-menu.png"><span
+                    class="hamb-line"></span></label>
+            <!-- Menu-Dropdown -->
+            <nav class="nav">
+                <ul class="menu">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="#">Asistente de apelación</a>
+                    <a href="about.html">Sobre el proyecto</a>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 </body>
+
 </html>
