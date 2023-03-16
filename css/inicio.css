@@ -1,5 +1,11 @@
 
+.main {
+    position: relative;
+    top: 110px;
+    z-index: -1;
+}
 .ifmenu {
     width: 100%;
     height: 200px;
+    position: fixed;
 }
