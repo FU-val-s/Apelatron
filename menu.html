@@ -7,32 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="css/test.css">
-    <script src="js/navbar.js"></script>
-
 </head>
-
+<!-- Navigation bar -->
+<header class="header">
+    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+    <!-- Title -->
+    <h2 class="menuTitle">Apelatron</h2>
+    <div class="menu-container">
+        <!-- Hamburger icon -->
+        <input class="side-menu" onclick="openNav()" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu" onclick="openNav()"><img src="img/Hamburger-menu.png"
+                onclick="openNav()"><span class="hamb-line"></span></label>
+    </div>
+</header>
 <body>
-    <!-- Navigation bar -->
-    <header class="header">
-        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-        <!-- Title -->
-        <h2 class="menuTitle">Apelatron</h2>
-        <div class="menu-container">
-            <!-- Hamburger icon -->
-            <input class="side-menu" type="checkbox" id="side-menu" />
-            <label class="hamb" for="side-menu" onclick="triggerIfMenu()"><img src="img/Hamburger-menu.png"><span
-                    class="hamb-line"></span></label>
-            <!-- Menu-Dropdown -->
-            <nav class="nav">
-                <ul class="menu">
-                    <a href="inicio.html">Inicio</a>
-                    <a href="#">Asistente de apelación</a>
-                    <a href="about.html">Sobre el proyecto</a>
-                </ul>
-            </nav>
+    <!-- Menu-Dropdown Fullscreen-->
+    <div id="myNav" class="nav">
+        <div class="dropBar">
+            <h3 class="dropTitle">Apelatron</h3>
+            <!-- Button to close -->
+            <a href="javascript:void(0)" class="closeMenu" onclick="closeNav()">&times;</a>
         </div>
+        <!-- Menu content -->
+        <div class="menu">
+            <a href="inicio.html"><img src="img/home.png">Inicio</a>
+            <hr>
+            <a href="#"><img src="img/mail.png">Asistente de apelación</a>
+            <hr>
+            <a href="about.html"><img src="img/balance.png">Sobre el proyecto</a>
+            <hr>
+            <a href="#"><img src="img/faqs.png">FAQs</a>
+            <hr>
+            <img class="brandImg" src="img/Branding Illustration.png">
+            <div class="part-3">
+                <a href="#" id="extra">Politica de privacidad</a>
+                <a href="#" id="extra">Sitio de DATA</a>
+                <div class="media">
+                    <a id="mediaImg">twitter</a>
+                    <a id="mediaImg">face</a>
+                    <a id="mediaImg">insta</a>
+                    <a id="mediaImg">youtube</a>
+                </div>
+            </div>
 
-    </header>
+            <p class="terms">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+        </div>
+    </div>
 </body>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
 
 </html>
