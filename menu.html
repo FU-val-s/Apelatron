@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="css/test.css">
 </head>
 <!-- Navigation bar -->
@@ -15,11 +16,12 @@
     <h2 class="menuTitle">Apelatron</h2>
     <div class="menu-container">
         <!-- Hamburger icon -->
-        <input class="side-menu"  type="checkbox" id="side-menu">
+        <input class="side-menu" type="checkbox" id="side-menu">
         <label class="hamb" for="side-menu" onclick="openNav()"><img src="img/Hamburger-menu.png"
                 onclick="openNav()"><span class="hamb-line"></span></label>
     </div>
 </header>
+
 <body>
     <!-- Menu-Dropdown Fullscreen-->
     <div id="myNav" class="nav">
@@ -30,35 +32,48 @@
         </div>
         <!-- Menu content -->
         <div class="menu">
-            <a href="inicio.html"><img src="img/home.png">Inicio</a>
-            <hr>
-            <a href="#"><img src="img/mail.png">Asistente de apelación</a>
-            <hr>
-            <a href="about.html"><img src="img/balance.png">Sobre el proyecto</a>
-            <hr>
-            <a href="#"><img src="img/faqs.png">FAQs</a>
-            <hr>
+            <div class="part-1">
+                <div id="part-1-row">
+                    <a href="inicio.html"><img src="img/home.png">Inicio</a>
+                </div>
+                <hr>
+                <div id="part-1-row">
+                    <a href="#"><img src="img/mail.png">Asistente de apelación</a>
+                </div>
+                <hr>
+                <div id="part-1-row">
+                    <a href="about.html"><img src="img/balance.png">Sobre el proyecto</a>
+                </div>
+                <hr>
+                <div id="part-1-row">
+                    <a href="#"><img src="img/faqs.png">FAQs</a>
+                </div>
+                <hr>
+            </div>
             <img class="brandImg" src="img/Branding Illustration.png">
             <div class="part-3">
                 <a href="#" id="extra">Politica de privacidad</a>
                 <a href="#" id="extra">Sitio de DATA</a>
-                <div id="media">
-                    <a id="mediaImg">twitter</a>
-                    <a id="mediaImg">face</a>
-                    <a id="mediaImg">insta</a>
-                    <a id="mediaImg">youtube</a>
+                <div id="network">
+                    <h3 id="networkTitle">Redes</h3>
+                    <div id="networkImg">
+                        <a id="mediaImg"><img src="img/twitter.png" alt=""></a>
+                        <a id="mediaImg"><img src="img/facebook.png" alt=""></a>
+                        <a id="mediaImg"><img src="img/instagram.png" alt=""></a>
+                        <a id="mediaImg"><img src="img/youtube.png" alt=""></a>
+                    </div>
                 </div>
+                <p id="terms">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                </p>
             </div>
-
-            <p class="terms">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            </p>
         </div>
     </div>
 </body>
 <script>
     function openNav() {
-        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("myNav").style.height = "900px";
     }
     function closeNav() {
         document.getElementById("myNav").style.height = "0%";
