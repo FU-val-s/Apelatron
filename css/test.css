@@ -30,6 +30,8 @@
 .logo {
     width: 30px;
     height: 30px;
+    position: relative;
+    top: 5px;
     /* Inside auto layout */
     flex: none;
     order: 0;
@@ -55,7 +57,6 @@
 
 .menu-container {
     order: 2;
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -66,7 +67,9 @@
 .hamb {
     cursor: pointer;
     float: right;
-    padding: 20px 20px;
+    width: 14px;
+    height: 16px;
+    padding: 20px 0px;
 }
 
 /* Style label tag */
