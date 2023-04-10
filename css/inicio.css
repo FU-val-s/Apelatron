@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    background-color: #a4ccea;
+    background: linear-gradient(180deg, #DFEAFF 13.99%, #E4F4FF 40.78%, #FFFFFF 129.15%);
+    background-attachment:fixed;
 }
 
 .ifmenu {
@@ -11,7 +14,7 @@ body {
     position: absolute;
 }
 
-.mainPage {
+.main-frame {
     position: relative;
     top: 100px;
     z-index: 1;
@@ -20,26 +23,7 @@ body {
     width: 100%;
 }
 
-#rectangle {
-    z-index: -2;
-    position: absolute;
-    width: 408px;
-    height: 380px;
-    top: -150px;
-    background: #e4ecfc ;
-}
-
-#elipse {
-    z-index: -1;
-    position: absolute;
-    width: 518px;
-    height: 433px;
-    top: 120px;
-    border-radius: 50%;
-    background: #FFFFFF;
-}
-
-.mainContent {
+.main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,10 +31,24 @@ body {
     gap: 32px;
 }
 
-.logo {
+#content-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    width: 245px;
-    height: 210px;
+#elipse {
+    z-index: -1;
+    position: absolute;
+    width: 230%;
+    height: 140%;
+    top: 120px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.logo {
+    display: flex;
 }
 
 .mainText {
@@ -62,6 +60,7 @@ body {
 }
 
 .mainText #subtitle {
+    display: flex;
     height: 14px;
     font-family: 'Inter';
     font-style: normal;
@@ -73,21 +72,21 @@ body {
     color: #2D3473;
 }
 
-.mainText #title {
-    width: 350px;
+.mainText #page-title {
+    display: flex;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
     line-height: 40px;
     color: #2D3473;
-    flex: none;
     align-self: stretch;
     flex-grow: 0;
     margin: 0;
 }
 
 hr {
+    display: flex;
     background-color: rgb(42, 146, 232);
     font-weight: 800;
     position: relative;
@@ -98,6 +97,7 @@ hr {
 }
 
 p {
+    display: flex;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -123,7 +123,6 @@ p {
     align-items: center;
     padding: 16px;
     gap: 8px;
-    width: 350px;
     height: 44px;
     background: #3FA1EB;
     color: white;
@@ -134,7 +133,4 @@ p {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    display: flex;
-    align-items: center;
-
 }

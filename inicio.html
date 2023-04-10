@@ -7,26 +7,28 @@
     <title>Inicio</title>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/inicio.css">
 </head>
+
 <body>
     <header>
         <!--Menu-->
-        <iframe class="ifmenu" id="ifmenu" src="menu.html" frameborder="0"></iframe></iframe>
-        <div>
+        <iframe class="ifmenu" src="menu.html" frameborder="0"></iframe>
     </header>
-    <div class="mainPage">
-        <div class="mainContent">
-            <div id="rectangle"></div>
-            <div id="elipse"></div>
-            <div class="logo">
-                <img src="img/Completo.png" alt="">
+    <div class="main-frame">
+        <div class="main-content">
+            <div id="content-header">
+                <div id="elipse"></div>
+                <div id="logo">
+                    <img src="img/Completo.png" alt="">
+                </div>
             </div>
             <div class="mainText">
                 <h4 id="subtitle">
                     SOBRE EL PROYECTO
                 </h4>
-                <h2 id="title">
+                <h2 id="page-title">
                     Asistente de apelacion
                 </h2>
                 <hr>
@@ -38,18 +40,18 @@
                     elit
                     sed risus. Maecenas eget condimentum velit.
                 </p>
-
             </div>
             <div class="mainButton">
                 <button>
                     Quiero iniciar con la apelación <img src="img/arrowR.png" alt="">
                 </button>
             </div>
+
         </div>
     </div>
     <footer>
-        <!-- footer-->
+        <script>
+            document.getElementsByName("footer").load("/footer.html");
+        </script>
     </footer>
-
-
 </body>

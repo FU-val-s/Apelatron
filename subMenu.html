@@ -11,9 +11,9 @@
 </head>
 <!-- Navigation bar -->
 <header class="header">
-    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+    <a href="inicio.html" class="go-back"><img src="img/arrow-left.png" alt="" ></a>
     <!-- Title -->
-    <h2 class="menuTitle">Apelatron</h2>
+    <h2 class="menuTitle"></h2>
     <div class="menu-container">
         <!-- Hamburger icon -->
         <img class="hamb" src="img/Hamburger-menu.png" onclick="openNav()">
@@ -73,6 +73,7 @@
     </div>
 </body>
 <script>
+    document.getElementsByClassName("menuTitle").innerText = document.title;
     function openNav() {
         document.getElementById("myNav").style.height = "900px";
     }

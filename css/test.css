@@ -1,7 +1,10 @@
 /* TopBar */
+
+body {
+    margin: 0;
+}
+
 .header {
-    background-color: black;
-    box-shadow: 1px 1px 5px 0px var(--gray);
     position: relative;
     top: 0;
     width: 100%;
@@ -10,20 +13,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 12px 20px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
     gap: 10px;
-
-    /* Grises/Blanco */
     background: #FFFFFF;
-    /* Grises/Gris 06 */
     border-bottom: 1px solid #F5F5F5;
-    /* Sombras/Nav */
     box-shadow: 0px 4px 4px rgba(232, 232, 232, 0.25);
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 /* Logo */
@@ -31,8 +27,6 @@
     width: 30px;
     height: 30px;
     position: relative;
-    top: 5px;
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -40,8 +34,6 @@
 
 /* Titulo Apelatron */
 .menuTitle {
-    width: 72px;
-    right: 0px;
     height: 22px;
     font-family: 'Arial';
     font-style: normal;
@@ -67,8 +59,8 @@
 .hamb {
     cursor: pointer;
     float: right;
-    width: 14px;
-    height: 16px;
+    width: 20px;
+    height: 14px;
     padding: 20px 0px;
 }
 
@@ -85,7 +77,7 @@
 
 /* Style span tag */
 
-.hamb-line::before,
+/* .hamb-line::before,
 .hamb-line::after {
     background: white;
     content: '';
@@ -106,12 +98,12 @@
 
 .side-menu {
     display: none;
-}
+} */
 
 /* Hide checkbox */
 
 /* Toggle menu icon */
-.side-menu:checked~nav {
+/* .side-menu:checked~nav {
     max-height: 100%;
 }
 
@@ -127,7 +119,7 @@
 .side-menu:checked~.hamb .hamb-line::after {
     transform: rotate(45deg);
     top: 0;
-}
+} */
 
 /*---------Menu desplegable----------*/
 
@@ -298,6 +290,18 @@ hr {
     justify-content: center;
     align-items: center;
     padding: 0px;
+}
+
+.menu-aviso {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #2D3473;
+
 }
 
 
