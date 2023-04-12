@@ -1,6 +1,43 @@
 /*Sacaremos la info del git que nos paso fernando*/
 body {
     background: #2D3473;
+    margin: 0;
+}
+
+.main-frame {
+
+    position: relative;
+    z-index: 1;
+    padding: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 20px;
+    background: #2D3473;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 16px;
+    gap: 34px;
+}
+
+#info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+#more-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    text-decoration-line: underline;
 }
 
 footer {
@@ -29,20 +66,35 @@ footer .expanded .logos {
 
 
 h2 {
+
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 36px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
     color: #FFFFFF;
-    text-decoration: none;
-    gap: 16px;
-    display: flex;
-    align-items: center;
+
+
+}
+
+p {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+
 }
 
 a {
     color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .footer-toggle-btn {
@@ -69,7 +121,7 @@ a {
     position: relative;
 }
 
-#credits{
+#credits {
     margin: 18px 0 0 0;
 }
 
