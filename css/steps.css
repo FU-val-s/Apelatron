@@ -67,6 +67,7 @@ hr {
 }
 
 h4 {
+    margin: 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -160,10 +161,26 @@ p {
 
 #check-frame {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+#check-frame2 {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
+}
+
+#check-frame2 label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 #check-frame label {
@@ -176,7 +193,7 @@ p {
 
 .relevant {
     background: #E4F4FF;
-    padding: 0px 4px;
+    padding: 8px 8px;
 }
 
 #answerT {
@@ -223,6 +240,14 @@ p {
     color: #878787;
 }
 
+#networkImg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 0px 24px;
+    gap: 8px;
+}
+
 .upload-button {
     display: flex;
     flex-direction: column;
@@ -246,6 +271,7 @@ p {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
+    gap: 8px;
 }
 
 .main-button {

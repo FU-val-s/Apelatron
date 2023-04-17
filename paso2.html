@@ -15,7 +15,7 @@
 <body>
     <header>
         <!--Menu-->
-        <iframe class="ifmenu" src="menu.html" frameborder="0"></iframe>
+        <iframe class="ifmenu" src="subMenu.html" frameborder="0"></iframe>
     </header>
     <div class="main-frame">
         <div id="head-img">
@@ -60,7 +60,7 @@
                 </select>
                 <p id="suplement">Seleccionar lo más similar al caso puntual.</p>
             </div>
-            <div id="check-frame">
+            <div id="check-frame2">
                 <div>
                     <input type="checkbox" id="terms-accept" name="terms1" value="True">
                     <label for="terms1">Variable especifica 1</label><br>
@@ -72,11 +72,16 @@
             </div>
             <div id="blank"></div>
             <div class="main-button">
-                <button>Siguiente <img src="img/arrowR.png" alt=""></button>
+                <button id="next">Siguiente <img src="img/arrowR.png" alt=""></button>
             </div>
         </div>
     </div>
     <footer>
 
     </footer>
+    <script>
+        document.getElementById("next").onclick = function () {
+                location.href = "paso3.html";
+            };
+    </script>
 </body>

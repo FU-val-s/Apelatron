@@ -15,7 +15,7 @@
 <body>
     <header>
         <!--Menu-->
-        <iframe class="ifmenu" src="menu.html" frameborder="0"></iframe>
+        <iframe class="ifmenu" src="subMenu.html" frameborder="0"></iframe>
     </header>
     <div class="main-frame">
         <div id="head-img">
@@ -79,7 +79,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
                     mattis.</p>
             </div>
-            <div class="main-button">
+            <div id="next" class="main-button">
                 <button><img src="img/house.png" alt=""> Volver al inicio</button>
             </div>
             <div class="upload-button">
@@ -90,4 +90,9 @@
     <footer>
 
     </footer>
+    <script>
+        document.getElementById("next").onclick = function () {
+                location.href = "paso9.html";
+            };
+    </script>
 </body>

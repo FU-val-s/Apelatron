@@ -15,7 +15,7 @@
 <body>
     <header>
         <!--Menu-->
-        <iframe class="ifmenu" src="menu.html" frameborder="0"></iframe>
+        <iframe class="ifmenu" src="subMenu.html" frameborder="0"></iframe>
     </header>
     <div class="main-frame">
         <div id="head-img">
@@ -48,11 +48,16 @@
                     mattis.</p>
             </div>
             <div class="main-button">
-                <button>Empezar con el proceso</button>
+                <button id="next">Empezar con el proceso</button>
             </div>
         </div>
     </div>
     <footer>
 
     </footer>
+    <script>
+        document.getElementById("next").onclick = function () {
+                location.href = "paso2.html";
+            };
+    </script>
 </body>

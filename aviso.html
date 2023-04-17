@@ -14,7 +14,7 @@
 <body>
     <header>
         <!--Menu-->
-        <iframe class="ifmenu" src="menu.html" frameborder="0"></iframe>
+        <iframe class="ifmenu" src="menuAd.html" frameborder="0"></iframe>
     </header>
     <div class="main-frame">
         <div id="t1">
@@ -58,9 +58,14 @@
             </ul>
         </div>
         <div class="buttonFrame">
-            <button>
+            <button id="next">
                 Entendido <img src="img/tick.png" alt="">
             </button>
         </div>
     </div>
+    <script>
+        document.getElementById("next").onclick = function () {
+                location.href = "paso1.html";
+            };
+    </script>
 </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +43,7 @@
                 </p>
             </div>
             <div class="mainButton">
-                <button>
+                <button id="send">
                     Quiero iniciar con la apelación <img src="img/arrowR.png" alt="">
                 </button>
             </div>
@@ -50,7 +51,10 @@
         </div>
     </div>
     <footer>
-        <script>
+        <script type="text/javascript">
+            document.getElementById("send").onclick = function () {
+                location.href = "aviso.html";
+            };
             document.getElementsByName("footer").load("/footer.html");
         </script>
     </footer>
